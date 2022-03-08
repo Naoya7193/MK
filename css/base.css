@@ -11,3 +11,207 @@ body{
     font-size: 18px;
     font-weight: 400;
 }
+
+/* ヘッダー */
+.header{
+    width: 100%;
+    display: flex;
+}
+
+.header_icon{
+    display: flex;
+    background-color: #fff;
+    width: 31%;
+    align-items: center;
+}
+
+.header_nav{
+    width: 79%;
+    background: #479D40;
+}
+
+.header_logo{
+    margin-left: 25%;
+    width: 63%;
+}
+
+.header_list{
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.header_nav li{
+    color: #fff;
+    font-weight: 600;
+    padding: 30px 19px;
+}
+
+
+/* お問い合わせと採用情報 */
+.info{
+    width: 100%;
+    display: flex;
+}
+
+.contact{
+    background-image: url(../image/contact.png);
+}
+
+.recruit{
+    background-image: url(../image/recruit.png);
+}
+
+.contact,
+.recruit{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    padding: 80px 0 39px 0;
+}
+
+.contact_inner,
+.recruit_inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contact_title{
+    font-size: 39px;
+    color: #479D40;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.contact_text{
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.contact_button{
+    background-color:#479D40;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.recruit_title{
+    font-size: 39px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.recruit_text{
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.recruit_button{
+    border:1px solid #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+
+/* マンガでわかる！！ページへのリンク */
+.commic{
+    width: 43%;
+    height: 236px;
+    background-image: url(../image/commic.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 auto;
+}
+
+/* フッター */
+.footer{
+    background-color: #fffED6;
+}
+
+.footer p{
+    font-size: 14px;
+}
+
+.footer_inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 8%;
+}
+
+.footer_box_left{
+    width: 29%;
+}
+
+.footer_icon{
+    width: 62%;
+    margin-bottom: 60px;
+}
+
+.footer_item_button{
+    background-color: #479D40;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    margin-right: 9px;
+}
+
+.footer_item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.footer_box_center{
+    width: 38%;
+    border-left: #C8C8C8 1px solid;
+    border-right: #C8C8C8 1px solid;
+}
+
+.footer_nav{
+    padding: 50px;
+}
+
+.footer_box_right{
+    width: 33%;
+}
+
+.footer_box_inner{
+    padding-top:50px;
+    padding-left: 50px;
+}
+
+.footer_box_right p{
+    margin-bottom: 14px;
+}
+
+.button{
+    color: #FFF832;
+    font-weight: 500;
+    background-color: #479D40;
+    padding: 20px 50px 22px 60px;
+    border-radius: 10px;
+    
+}
+
+.footer_button{
+    margin-top: 50px;
+}
+
+
