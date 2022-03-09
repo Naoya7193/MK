@@ -8,6 +8,7 @@
 .MV{
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
     height: 89vh;
     background-image: url(../image/MV.png);
     background-repeat: no-repeat;
@@ -23,6 +24,19 @@
     margin-bottom: 82px;
     line-height: 2;
     letter-spacing: .2em;
+}
+
+.promotion_video{
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 17%;
+    aspect-ratio: 200/130;
+}
+
+.promotion_video iframe{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 
