@@ -13,7 +13,7 @@
     background-image: url(../image/MV.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: center;
 }
 
 .maincopy{
@@ -55,6 +55,7 @@
 .news_title{
     font-weight: 600;
     margin-right: 16px;
+    white-space: nowrap;
 }
 
 .news_button{
@@ -63,6 +64,7 @@
     align-items: center;
     width: 20px;
     height: 20px;
+    min-width: 20px;
     border-radius: 15px;
     background-color: #479D40;
     margin-right: 6%;
@@ -99,6 +101,7 @@
     position: relative;
 }
 
+/* TODO(0309)：猫のz-indexの扱いを検討 */
 .message::before{
     content: "";
     background-image: url(../image/character.png);
@@ -109,8 +112,9 @@
     height: 30%;
     bottom: 35px;
     right: 29px;
-    position: absolute;
+    z-index: -5;
 
+    position: absolute;
 }
 
 .message_image_area{
@@ -123,11 +127,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    min-width: 300px;
 }
 
 .section_button{
-    display: flex;
-    align-items: center;
+    display: block;
     color: #479D40;
     padding: .5em 66px;
     background-color: #fff;
@@ -148,8 +152,7 @@
     width: 8px;
     height: 8px;
     right: 20%;
-    transform: rotate(-45deg);
-
+    transform: rotate(-45deg) translateY(100%);
 
     position: absolute;
 
@@ -174,6 +177,8 @@
     letter-spacing: .3em;
 }
 
+/* TODO(0309)：中間サイズで文字サイズを変更できる場合このままでOK */
+/* 変更できない場合はline-heightは%表記で */
 .message_text{
     line-height: 3.3;
 }
@@ -219,21 +224,27 @@
     content: "Service";
 }
 
-.service_01{
+.service_01,
+.service_02{
     width: 100%;
-    background-image: url(../image/service01.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
     padding: 50px 0;
 }
 
-.service_01_box{
+.service_01{
+    background-image: url(../image/service01.png);
+}
+
+.service_01_box,
+.service_02_box{
     width: 42%;
     margin-left: 100px;
     background-color: #fff;
     opacity: 90%;
     border-radius: 10px;
+    min-width: 510px;
 }
 
 .service_inner{
@@ -262,20 +273,7 @@
 }
 
 .service_02{
-    width: 100%;
     background-image: url(../image/service02.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    padding: 50px 0;
-}
-
-.service_02_box{
-    width: 42%;
-    margin-left: 100px;
-    background-color: #fff;
-    opacity: 90%;
-    border-radius: 10px;
 }
 
 .service_button_box{
@@ -284,6 +282,7 @@
     justify-content: space-between;
 }
 
+/* TODO(0309)：gapとかでもいいかも ボタン間が広すぎる気がする */
 .service_button_box .section_button{
     padding: .7em 55px .7em 47px;
 }
