@@ -44,6 +44,10 @@ body{
 .header_nav li{
     color: #fff;
     font-weight: 600;
+}
+
+.header_nav li a{
+    display: block;
     padding: 30px 19px;
 }
 
