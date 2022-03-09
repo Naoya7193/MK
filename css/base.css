@@ -23,6 +23,7 @@ body{
     background-color: #fff;
     width: 31%;
     align-items: center;
+    justify-content: center;
 }
 
 .header_nav{
@@ -31,15 +32,17 @@ body{
 }
 
 .header_logo{
-    margin-left: 25%;
+    margin-left: 7%;
     width: 63%;
+    min-width: 160px;
 }
 
-/* TOOD(0309)：中間サイズの文字サイズ */
+/* TODO(0309)：中間サイズの文字サイズ */
 .header_list{
     display: flex;
     align-items: center;
     margin-left: 2%;
+    /* white-space: nowrap; */
 }
 
 .header_nav li{
