@@ -1,7 +1,4 @@
 @charset "utf-8";
-/* TODO：MVとヘッダーをまとめるかどうか */
-/* TODO：MVのheightは100vhからheaderの高さを引いた値に設定するといいかも */
-
 
 
 /* MV */
@@ -240,11 +237,14 @@
 .service_01_box,
 .service_02_box{
     width: 42%;
-    margin-left: 100px;
     background-color: #fff;
     opacity: 90%;
     border-radius: 10px;
     min-width: 510px;
+}
+
+.service_01_box{
+    margin-left: 100px;
 }
 
 .service_inner{
@@ -273,7 +273,13 @@
 }
 
 .service_02{
+    display: flex;
+    justify-content: end;
     background-image: url(../image/service02.png);
+}
+
+.service_02_box{
+    margin-right: 100px;
 }
 
 .service_button_box{
@@ -282,7 +288,6 @@
     justify-content: space-between;
 }
 
-/* TODO(0309)：gapとかでもいいかも ボタン間が広すぎる気がする */
 .service_button_box .section_button{
     padding: .7em 55px .7em 47px;
 }
