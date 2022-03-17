@@ -1,0 +1,76 @@
+
+//コンテンツ幅（px）
+$sm: 720;
+$md: 768;
+$lg: 1000;
+$xl: 1200;
+$xx: 2000;
+
+
+//メディアクエリ
+$breakpoints: (
+    'sm': '(max-width: #{$sm}px)',
+    'md': '(max-width: #{$md}px)',
+    'lg': '(max-width: #{$lg}px)',
+    'xl': '(max-width: #{$xl}px)',
+    'xx': '(max-width: #{$xx}px)',
+    'pc_none': '(min-width: #{$xx}px)',
+) !default;
+
+//コンテンツ幅
+$wrapper: (
+    'sm': #{$sm},
+    'md': #{$md},
+    'lg': #{$lg},
+    'xl': #{$xl},
+    'xx': #{$xx},
+) !default;
+
+
+
+
+//メディアクエリ
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+/*　使用例
+@include mq() {
+    color: red;
+}
+*/
+
+
+// wrapper自動化
+@mixin cp_wrapper($max: lg, $w: 90%) {
+    width: $w;
+    max-width: #{map-get($wrapper, $max)}px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include mq() {
+        width: $w * 1.05;
+    }
+}
+/*　使用例
+@include cp_wrapper($max: sm);
+*/
+
+
+// clamp自動化
+@function clp($f: 16, $max: lg) {
+    $mw: #{map-get($wrapper, $max)};
+    $ft: $f * 1vw;
+    @return clamp(#{$f * .7}px, calc(#{$ft} / #{$mw} * 90), #{$f}px);
+}
+/*　使用例
+font-size: clp(20);
+*/
+
+// vw自動化（スマホ専用）
+$board: 750; //スマホカンプのアートボード幅を入れてください
+
+@function vw($f: 16, $bd: $board) {
+    @return #{$f / $bd * 100}vw;
+}

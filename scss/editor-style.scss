@@ -1,0 +1,17 @@
+%blog_wrapper {
+    width: 80%;
+    max-width: 640px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+%blog_parts {
+    h2 {
+        text-align: left;
+    }
+}
+
+.editor-styles-wrapper {
+    @extend %blog_wrapper;
+    @extend %blog_parts;
+}

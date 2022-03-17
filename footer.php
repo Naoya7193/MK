@@ -6,7 +6,7 @@
                     <p class="contact_title">お問い合わせ</p>
                     <p class="contact_text">収集運搬、遺品整理ついてのお問い合わせや<br>ご質問はこちらから。</p>
                 </div>
-                <div class="contact_button"></div>
+                <div class="info_button"></div>
             </a>
         </div>
 
@@ -16,7 +16,7 @@
                     <p class="recruit_title">採用情報</p>
                     <p class="recruit_text">採用についてのお問い合わせはこちらから。</p>
                 </div>
-                <div class="recruit_button"></div>
+                <div class="info_button"></div>
             </a>
         </div>
     </div>
@@ -72,10 +72,10 @@
                 <div class="footer_box_inner">
                     <p>株式会社エムケー</p>
                     <p>〒571-0016　大阪府門真市島頭2丁目13-18</p>
-                    <p><a href="" class="google_map">＞ Googlemapで確認する</a></p>
+                    <p><a href="https://www.google.co.jp/maps/place/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A8%E3%83%A0%E3%82%B1%E3%83%BC/@34.7335278,135.6058532,17z/data=!3m1!4b1!4m5!3m4!1s0x60011fea834d90ad:0xb4afa853137f3334!8m2!3d34.7335234!4d135.6080472?hl=ja" class="google_map">＞ Googlemapで確認する</a></p>
                     <p>TEL:072-885-4156</p>
 
-                    <div class="footer_button">
+                    <div class="contact_button">
                         <a href="" class="button">お問い合わせはこちら</a>
                     </div>                        
                 </div>

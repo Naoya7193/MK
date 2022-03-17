@@ -67,16 +67,31 @@
     <header class="header">
         <div class="header_icon">
             <img src="<?= get_template_directory_uri(); ?>/image/header_logo.png" alt="会社アイコン" class="header_logo">
+            <div class="hamburger_menu pc_none">
+                <div class="hamburger_inner"></div>
+            </div>
         </div>
 
         <nav class="header_nav">
-            <ul class="header_list">
-                <li><a href="#service">事業案内</a></li>
+            <ul class="header_list flex">
+                <li class=open_nav><a href="#service">事業案内</a>
+
+                    <ul class="sub_menu sp_none">
+                        <div class="sub_menu_inner">
+                            <li class="sub_menu01"><a href=""></a></li>
+                            <li class="sub_menu02"><a href=""></a></li>
+                        </div>
+                    </ul>
+                </li>
+
                 <li><a href="#about">会社案内</a></li>
                 <li><a href="#recruit">採用情報</a></li>
                 <li><a href="#news&blog">ニュース & ブログ</a></li>
-                <li><a href="">Q&A</a></li>
-                <li style="color:#FFF832;"><a href="#contact">お問い合わせ</a></li>
+                <li><a href="#faq">Q&A</a></li>
+                <li class="sp_none" style="color:#FFF832;"><a href="#contact">お問い合わせ</a></li>
+                <div class="contact_button pc_none">
+                    <a href="" class="button">お問い合わせはこちら</a>
+                </div>               
             </ul>
         </nav>
     </header>

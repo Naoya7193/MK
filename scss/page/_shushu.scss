@@ -1,0 +1,202 @@
+@charset 'utf-8';
+
+/* ページタイトル */
+.page_title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 75px 0 110px;
+    background-image: url(../image/syusyu_page_title.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.page_sub_title {
+    margin-bottom: 14px;
+    font-weight: 500;
+}
+
+.page_main_title {
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: .2em;
+    color: #479d40;
+}
+
+/* MV */
+.syusyu_mv {
+    z-index: 5;
+    display: block;
+    margin-top: -60px;
+    background-image: url(../image/syusyu_mv.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+
+    aspect-ratio: 1000/400;
+}
+
+.syusyu_maincopy {
+    display: inline-block;
+    margin-top: 60px;
+    padding: 30px 60px 30px 40px;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.75;
+    color: #479d40;
+    border-radius: 0 10px 10px 0;
+    background-color: #fff;
+}
+
+.mv_text {
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 75px;
+    line-height: 2;
+    text-align: center;
+}
+
+/* サービス内容 */
+.syusyu_service {
+    padding-top: 95px;
+    background-color: #f0f0f0;
+}
+
+.syusyu_container {
+    padding-bottom: 105px;
+}
+
+.syusyu_box {
+    margin-bottom: 95px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.syusyu_inner {
+    display: flex;
+}
+
+.syusyu_title {
+    display: flex;
+    align-items: center;
+    width: 12%;
+    margin-top: -1.5em;
+    font-size: 34px;
+    font-weight: 500;
+    color: #479d40;
+
+    writing-mode: vertical-rl;
+}
+
+.syusyu_image {
+    width: 38%;
+    background-image: url(../image/syusyu_area_map.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+
+    aspect-ratio: 380/400;
+}
+
+.reverse .syusyu_image {
+    background-image: url(../image/syusyu_cars.png);
+}
+
+.syusyu_text_area {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: end;
+    width: 40%;
+    margin-left: 3%;
+}
+
+.syusyu_text {
+    margin-bottom: 50px;
+    line-height: 2.3;
+}
+
+.syusyu_button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .75em 3em;
+    font-size: 16px;
+    color: #479d40;
+    border: 1px solid #479d40;
+    border-radius: 20px;
+}
+
+.syusyu_button::before {
+    position: absolute;
+    right: 10%;
+    width: 10px;
+    height: 10px;
+    content: '';
+    transform: rotate(-45deg);
+    border: 1px #479d40 solid;
+    border-top: 0;
+    border-left: 0;
+}
+
+.reverse .syusyu_inner {
+    flex-direction: row-reverse;
+}
+
+.reverse .syusyu_text_area {
+    align-items: flex-start;
+    margin-right: 3%;
+    margin-left: unset;
+}
+
+.reverse .syusyu_inner {
+    padding-bottom: 60px;
+}
+
+.syusyu_database_container {
+    width: 86%;
+    margin: 0 auto;
+}
+
+.syusyu_database_box {
+    margin-bottom: 60px;
+}
+
+.syusyu_database_title {
+    margin-bottom: 15px;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    color: #479d40;
+}
+
+.syusyu_database_table {
+    width: 100%;
+    font-size: 16px;
+}
+
+.syusyu_database_table th {
+    font-weight: 500;
+    color: #fff;
+    background-color: #479d40;
+}
+
+.syusyu_database_table th, td {
+    width: 20%;
+    padding: .75em 1em;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #c8c8c8;
+}
+
+.syusyu_database_table th:nth-child(1), td:nth-child(1) {
+    border-left: none;
+}
+
+.syusyu_database_table th:last-child, td:last-child {
+    border-right: none;
+}

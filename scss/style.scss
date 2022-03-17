@@ -1,0 +1,37 @@
+@charset 'utf-8';
+
+//設定ファイル（変数）
+@import 'setting/config';
+
+//関数ファイル（MIXINなど）
+@import 'setting/function';
+
+
+
+//リセットCSS
+@import 'base/reset';
+
+//サイト共通のベースCSS
+@import 'base/base';
+
+
+
+//ヘッダー
+@import 'module/header';
+
+//フッター
+@import 'module/footer';
+
+//ボタンなど
+@import 'module/parts';
+
+
+
+//固定ページ共通
+@import 'page/page';
+
+//トップ専用CSS
+@import 'page/top';
+
+//収集ページ
+@import 'page/shushu';
