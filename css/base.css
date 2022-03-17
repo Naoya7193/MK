@@ -6,7 +6,7 @@ html {
 }
 
 body{
-    color: #222;
+    color: #000;
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -300,4 +300,78 @@ body{
     max-width: 290px;
 }
 
+/* pc_noneとsp_none */
+@media (max-width:750px) {
+    .sp_none{
+        display: none!important;
+    }
+}
+
+@media (min-width:751px) {
+    .pc_none{
+        display: none!important;
+    }
+}
+
+/* スマホデザイン */
+@media (max-width:750px) {
+
+    /* Flex */
+    .flex{
+        flex-direction: column;
+    }
+
+    /* ヘッダー */
+    .header{
+        display: none;
+    }
+
+    /* お問い合わせと採用情報 */
+    .contact,
+    .recruit{
+        width: 100%;
+    }
+
+    /* マンガでわかる！！ページへのリンク */
+    .commic_image{
+        width: 80%;
+    }
+
+    /* フッター */
+    .footer_inner{
+        flex-direction: column-reverse;
+        padding: unset;
+        align-items: center;
+    }
+
+    .footer_icon_sp{
+        width: 50%;
+        margin-top: 60px;
+    }
+
+    .footer_box_right{
+        width: 100%;
+    }
+
+    .footer_box_left{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .footer_item{
+        min-width: unset;
+        margin-bottom: unset;
+    }
+
+    .footer_button{
+        
+    }
+
+    .footer_box_inner{
+        padding-left: unset;
+    }
+
+}
 

@@ -371,3 +371,105 @@
 }
 
 
+/* スマホデザイン */
+@media (max-width:750px) {
+    /* コンテンツ幅 */
+    .wrapper_sp{
+        width: 87%;
+        margin: 0 auto;
+    }
+
+    /* MV */
+    .MV{
+        height: 56vw;
+        background-position: top;
+    }
+
+    /* メインコピー */
+    .sp_maincopy{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 37vw;
+        color: #000;
+    }
+
+    .sp_maincopy_text{
+        text-align: center;
+    }
+
+    /* TODO：news_buttonを擬似要素にする */
+    /* ニュース */
+    .news{
+        padding: 7vw 7vw 5vw 7vw;
+
+    }
+
+    .news_heading{
+        display: unset;
+        padding:unset;
+        margin-left: unset;
+    }
+
+    .news_box{
+        display: unset;
+    }
+
+    /* メッセージ */
+    .message{
+        flex-direction: column-reverse;
+    }
+
+    .message::before{
+        width: 18vw;
+        bottom: 100px;
+        right: -15px;
+        z-index: 5;
+    }
+
+    .message_area{
+        writing-mode: unset;
+    }
+
+    .message_title{
+        line-height: 1.5;
+        letter-spacing: .2em;
+        margin-left: unset;
+    }
+
+    .message_text{
+        line-height: 2;
+    }
+
+    .message_image_area{
+        width: 100%;
+        height: 37vw;
+        padding-bottom: 18px;
+
+        background-size: 100%;
+        background-position: center 36%;
+        border-radius: 10px;
+    }
+
+    /* 事業案内 */
+    .service_01_box,
+    .service_02_box{
+        min-width: unset;
+    }
+
+    .service_inner{
+        padding: 50px;
+    }
+
+    /* ニュース&ブログ */
+    .blog_container{
+        align-items: center;
+    }
+
+    .blog_box{
+        width: 80%;
+    }
+
+
+}
+
